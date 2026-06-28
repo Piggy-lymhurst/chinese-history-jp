@@ -185,6 +185,24 @@ h2 {
   box-shadow: 0 2px 5px rgba(76, 49, 22, 0.18);
 }
 
+.comments-section {
+  margin-top: 42px;
+  padding: 24px;
+  background: #fffdf8;
+  border: 1px solid #eadbc2;
+  border-radius: 8px;
+  box-shadow: 0 8px 22px rgba(75, 49, 22, 0.1);
+}
+
+.comments-section h2 {
+  margin-top: 0;
+}
+
+.comments-section p {
+  line-height: 1.8;
+  margin: 0 0 18px;
+}
+
 @media (max-width: 640px) {
   header {
     padding: 30px 16px;
@@ -232,5 +250,9 @@ h2 {
 
   .era-content h3 {
     font-size: 1.25rem;
+  }
+
+  .comments-section {
+    padding: 18px;
   }
 }
