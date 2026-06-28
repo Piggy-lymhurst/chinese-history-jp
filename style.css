@@ -1,0 +1,236 @@
+body {
+  font-family: "Hiragino Sans", "Yu Gothic", Meiryo, sans-serif;
+  background: #f7f3ea;
+  color: #302820;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: linear-gradient(135deg, #8b2f2f, #5d2d20);
+  color: white;
+  padding: 36px 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 10px;
+  letter-spacing: 0;
+}
+
+header p {
+  margin: 0;
+}
+
+main {
+  max-width: 920px;
+  margin: 32px auto 56px;
+  padding: 0 18px;
+}
+
+h2 {
+  color: #713024;
+  margin-bottom: 8px;
+}
+
+.intro {
+  margin-bottom: 28px;
+}
+
+.intro p {
+  line-height: 1.8;
+  margin: 0;
+}
+
+.rope-timeline {
+  position: relative;
+  display: grid;
+  gap: 22px;
+  padding-left: 72px;
+}
+
+.rope-timeline::before {
+  content: "";
+  position: absolute;
+  left: 28px;
+  top: 20px;
+  bottom: 20px;
+  width: 22px;
+  border-radius: 999px;
+  background:
+    repeating-linear-gradient(
+      135deg,
+      #9c6a35 0 8px,
+      #c89653 8px 16px,
+      #70491f 16px 24px
+    );
+  box-shadow:
+    inset 4px 0 7px rgba(255, 255, 255, 0.32),
+    inset -5px 0 8px rgba(65, 35, 10, 0.32),
+    0 4px 12px rgba(73, 48, 22, 0.18);
+}
+
+.era-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  background: #fffdf8;
+  border: 1px solid #eadbc2;
+  border-radius: 8px;
+  padding: 22px 24px 22px 28px;
+  box-shadow: 0 8px 22px rgba(75, 49, 22, 0.1);
+}
+
+.era-card:hover {
+  transform: translateY(-2px);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+  box-shadow: 0 12px 28px rgba(75, 49, 22, 0.15);
+}
+
+.big-knot {
+  position: absolute;
+  left: -58px;
+  top: 24px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 34% 28%, rgba(255, 246, 218, 0.95) 0 12%, transparent 13%),
+    repeating-linear-gradient(
+      45deg,
+      #7b4a20 0 7px,
+      #be8542 7px 14px,
+      #e0b36e 14px 21px,
+      #7b4a20 21px 28px
+    );
+  border: 4px solid #7a4b20;
+  box-shadow:
+    inset -6px -8px 10px rgba(64, 31, 8, 0.25),
+    0 4px 13px rgba(68, 43, 18, 0.28);
+}
+
+.big-knot::before,
+.big-knot::after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  width: 20px;
+  height: 13px;
+  border-radius: 999px;
+  background: #a86f34;
+  box-shadow: inset -3px -3px 5px rgba(64, 31, 8, 0.24);
+}
+
+.big-knot::before {
+  left: -16px;
+  transform: rotate(-28deg);
+}
+
+.big-knot::after {
+  right: -16px;
+  transform: rotate(28deg);
+}
+
+.period {
+  color: #86603a;
+  font-size: 0.9rem;
+  margin: 0 0 6px;
+}
+
+.era-content h3 {
+  color: #8b2f2f;
+  font-size: 1.45rem;
+  margin: 0 0 10px;
+}
+
+.era-content p {
+  line-height: 1.8;
+  margin: 0 0 14px;
+}
+
+.event-list {
+  display: grid;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.event-list li {
+  position: relative;
+  min-height: 28px;
+  padding: 8px 10px 8px 40px;
+  background: #f7efe2;
+  border-left: 3px solid #b77b38;
+  border-radius: 8px;
+  line-height: 1.65;
+}
+
+.event-list strong {
+  color: #653022;
+  margin-right: 0.35em;
+}
+
+.small-knot {
+  position: absolute;
+  left: 12px;
+  top: 13px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 32% 28%, #fff3c7 0 16%, transparent 18%),
+    repeating-linear-gradient(45deg, #8f5a28 0 4px, #d5a05b 4px 8px);
+  border: 2px solid #7a4b20;
+  box-shadow: 0 2px 5px rgba(76, 49, 22, 0.18);
+}
+
+@media (max-width: 640px) {
+  header {
+    padding: 30px 16px;
+  }
+
+  main {
+    margin-top: 24px;
+    padding: 0 14px;
+  }
+
+  .rope-timeline {
+    padding-left: 48px;
+  }
+
+  .rope-timeline::before {
+    left: 18px;
+    width: 18px;
+  }
+
+  .era-card {
+    padding: 18px;
+  }
+
+  .big-knot {
+    left: -43px;
+    width: 38px;
+    height: 38px;
+    border-width: 3px;
+  }
+
+  .big-knot::before,
+  .big-knot::after {
+    top: 11px;
+    width: 16px;
+    height: 10px;
+  }
+
+  .big-knot::before {
+    left: -12px;
+  }
+
+  .big-knot::after {
+    right: -12px;
+  }
+
+  .era-content h3 {
+    font-size: 1.25rem;
+  }
+}
